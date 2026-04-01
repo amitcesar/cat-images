@@ -1,5 +1,6 @@
-package com.github.amitcesar.cat_images
+package com.github.amitcesar.cat_images.ui
 
+import android.R
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -24,8 +25,8 @@ class CatAdapter : ListAdapter<CatImage, CatAdapter.CatViewHolder>(CatDiffCallba
         fun bind(cat: CatImage) {
             binding.ivCat.load(cat.url) {
                 crossfade(true)
-                placeholder(android.R.drawable.progress_indeterminate_horizontal)
-                error(android.R.drawable.stat_notify_error)
+                placeholder(R.drawable.progress_indeterminate_horizontal)
+                error(R.drawable.stat_notify_error)
             }
         }
     }

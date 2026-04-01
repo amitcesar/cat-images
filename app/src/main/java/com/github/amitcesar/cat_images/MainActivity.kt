@@ -10,7 +10,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import com.github.amitcesar.cat_images.api.CatApiService
 import com.github.amitcesar.cat_images.databinding.ActivityMainBinding
-import com.github.amitcesar.cat_images.model.CatImage
+import com.github.amitcesar.cat_images.ui.CatAdapter
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
